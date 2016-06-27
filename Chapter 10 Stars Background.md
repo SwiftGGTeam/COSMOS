@@ -35,7 +35,7 @@ var gapBetweenSigns : CGFloat = 10.0
 
 第一步是计算图层的内容大小。这一步很关键，因为我们要优化添加的资源。而且，因为这一层将以较慢的速度移动，所以也应该比其他层有较小的 contentSize。
 
-![](http://www.c4ios.com/cosmos/9-stars-background/01.png)
+![](http://www.c4ios.com/images/cosmos/10/01.png)
 
 为此，我们需要三样东西：
 
@@ -43,7 +43,7 @@ var gapBetweenSigns : CGFloat = 10.0
 2. 一个计算好的大小，它包含了当前框架和下一个出现的标志之间所有的空间。我们命名为变量 `singleContentSize` 
 3. 应用中标志的数量
 
-![](http://www.c4ios.com/cosmos/9-stars-background/02.png)
+![](http://www.c4ios.com/images/cosmos/10/02.png)
 
 ### 2.1 修正的 frame 大小
 
@@ -81,7 +81,7 @@ contentSize = CGSizeMake(singleSignContentSize * count + frame.width, 1.0)
 
 我们为内容大小添加了 `frame.width` 是因为我们需要图层在移动时超过末端。我们主要是在应用框架的空间内操作。
 
-![](http://www.c4ios.com/cosmos/9-stars-background/03.png)
+![](http://www.c4ios.com/images/cosmos/10/03.png)
 
 ### 2.5. 添加星星
 

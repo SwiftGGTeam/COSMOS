@@ -28,7 +28,16 @@ override func setup() {
 
 OK, 本章的目标就是实现当用户在菜单栏上进行拖拽时，菜单选择器会相对应的出现在用户当前手指的位置。像下面这样：
 
-![](https://zippy.gfycat.com/VainTautKagu.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/VainTautKagu.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 我们需要组合以下的几个任务来实现这个效果：
 
@@ -99,13 +108,20 @@ class WorkSpace: CanvasController {
 
 运行一下，你应该能够看到下面这样的效果：
 
-![](https://zippy.gfycat.com/FaithfulOrganicBigmouthbass.mp4)
-
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/FaithfulOrganicBigmouthbass.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 现在你从粉红色的块开始长按，并拖动，你会发现你触摸的位置会被持续打印在终端上。
 
 ![](http://c4ios.com/cosmos/02.png)
-
 
 我们使用 `switch` 语句来判断触摸的位置是否有更新，但默认的情况下这个方法什么都不做。现在我们仅仅只是测试了手势的拖拽，最终我们还会跟踪手势开始和结束的状态。
 
@@ -255,8 +271,16 @@ highlight.transform = rotation
 
 运行一下：
 
-![](https://zippy.gfycat.com/SnivelingFlamboyantFieldspaniel.mp4)
-
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/SnivelingFlamboyantFieldspaniel.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 4. 一些行为
 
@@ -303,16 +327,22 @@ if dist > 102 && dist < 156 {
 
 此时运行程序，会发现高亮区只有在触摸在图标上的时候才会更新：
 
-![](https://zippy.gfycat.com/CapitalCarefreeIceblueredtopzebra.mp4)
-
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/CapitalCarefreeIceblueredtopzebra.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 最后，添加下面的代码到 `createHighlight()`
 
 ```swift
 highlight.hidden = true
-
 ```
-
 
 以及，修改之前的 if 语句块，添加 else 分支来控制高亮区的显示和消失：
 
@@ -364,8 +394,16 @@ func createGesture() {
 
 此时运行程序：
 
-
-![](https://zippy.gfycat.com/NeighboringAgonizingAztecant.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/NeighboringAgonizingAztecant.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 5. 菜单的标签
 
@@ -472,7 +510,16 @@ public override func setup() {
 
 运行一下程序，行为应该是这样的：
 
-![](https://zippy.gfycat.com/NiceInfiniteBlueshark.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/NiceInfiniteBlueshark.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 6. 信息按钮
 

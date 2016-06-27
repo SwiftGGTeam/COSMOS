@@ -304,7 +304,16 @@ func createGesture() {
 
 现在，千万要确定你在 `Menu` 类的 setup 方法中调用了它。
 
-![](https://zippy.gfycat.com/EnragedLimpDungenesscrab.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/EnragedLimpDungenesscrab.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 酷！
 
@@ -427,15 +436,22 @@ if instructionLabel?.alpha > 0.0 {
 
 ```swift
 timer.stop()
-```swift
-
+```
 
 运行一下：
 
-![](https://zippy.gfycat.com/ConventionalDistantHartebeest.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/ConventionalDistantHartebeest.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 酷毙了。
-
 
 ## 7. 阴影
 
@@ -451,12 +467,9 @@ menuShadow.reveal?.animate()
 
 ```swift
 self.menuShadow.hide?.animate()
-
-
 ```
 
 现在，在菜单打开的时候，背景会变暗。
-
 
 ## 8. 结束
 

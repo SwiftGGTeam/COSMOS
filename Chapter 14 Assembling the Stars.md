@@ -189,7 +189,16 @@ class WorkSpace: CanvasController {
 
 看起来还不错的样子：
 
-![](https://zippy.gfycat.com/DefinitiveTeemingHaddock.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/DefinitiveTeemingHaddock.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 还有两件事情需要去做：
 
@@ -308,7 +317,16 @@ func createBigStars() {
 
 检查一下：
 
-![](https://zippy.gfycat.com/BackBlaringEastrussiancoursinghounds.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/BackBlaringEastrussiancoursinghounds.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 5. 线条的动画效果
 
@@ -339,7 +357,16 @@ func scrollViewWillBeginDragging(scrollView: UIScrollView) {
 
 当用户开始拖动时， `scrollViewWillBeginDragging` 代理方法会被自动调用。因此，我们要做的就是隐藏这个线条。
 
-![](https://zippy.gfycat.com/IlliterateBonyAxisdeer.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/IlliterateBonyAxisdeer.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 6. 下一步
 
@@ -369,4 +396,3 @@ func goto(selection: Int) {
 星星背景的类就到此为止了。
 
 可以下载 [Stars.swift](https://gist.github.com/C4Framework/8c30681420d7bea327b6) 的整个代码。
-

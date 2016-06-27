@@ -6,11 +6,11 @@
 
 由于我们已经在[之前的章节](http://www.c4ios.com/cosmos/8-stars/.%20)里仔细讲过了整个应用的设计，因此，不在这里赘述了。但是，在这里讲一下需要完成的视觉上的分解操作：
 
-![](http://www.c4ios.com/cosmos/8-stars/01.png)
+![](http://www.c4ios.com/images/cosmos/8/01.png)
 
 这是应用从水平角度看过去的样子，看上去有点简单。如果你现在忽视了那个圆形小菜单的话，你可以看看这个视图所有图层分层显示的版本，如下图。
 
-![](http://www.c4ios.com/cosmos/8-stars/02.png)
+![](http://www.c4ios.com/images/cosmos/8/02.png)
 
 正如你看到的，这里有 8 个图层。其中，每个图层都有各种纹理，有些纹理会移动，有些是静止的（如：speed = 0.0）。有些图层有动画，而最后一个图层为控制板和小符号放置了额外的可视化元素。
 

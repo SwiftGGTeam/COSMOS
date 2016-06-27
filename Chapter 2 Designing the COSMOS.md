@@ -118,7 +118,16 @@ class WorkSpace: CanvasController {
 
 现在运行程序，应用里会出现 label 控件，不过！如果我滚动界面，只有一个 layer 在滚动...
 
-![](https://zippy.gfycat.com/DishonestDescriptiveBassethound.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/DishonestDescriptiveBassethound.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 下一步就是创建一个观察器，查看一下最上层的 layer，在滚动时将剩下的 layer 移走。在 setup 的最下方，添加下列代码：
 
@@ -150,7 +159,16 @@ override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObjec
 }
 ```
 
-![](https://zippy.gfycat.com/RequiredSilentAfricangoldencat.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/RequiredSilentAfricangoldencat.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 漂亮。现在我们知道这 10 个 layer 能够成功工作了...不过，如果当图片放在这些层上会发生什么呢？...是时候测试一下了。Jake 大致估计了一下，每层星星的数量大约在 15 个，还给我一个小的白星星素材。
 
@@ -177,7 +195,16 @@ for _ in 0..<starCount {
 
 运行程序，模拟器中应用效果如下：
 
-![](https://zippy.gfycat.com/NippyQuaintBrownbear.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/NippyQuaintBrownbear.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 应用在 iPhone 5 上运行良好。这 10 层的运行结果非常正常，那么剩下的问题就是界面的美观程度了。这时，Jake 也基本上制定了在这一节一开始提到的列表中的全部细节。
 

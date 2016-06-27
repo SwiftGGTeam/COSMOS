@@ -66,7 +66,16 @@ animOut()
 
 得到了这样的效果：
 
-![](https://zippy.gfycat.com/OldWindyKiwi.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/OldWindyKiwi.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 2. 细圆环的动画效果（淡出）
 
@@ -221,7 +230,16 @@ createDashedRingAnimations()
 
 运行，效果如下图：
 
-![](https://zippy.gfycat.com/OldNastyJaguarundi.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/OldNastyJaguarundi.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 估计现在你已经注意到了，圆环和竖线的调速有些问题。不用担心，最后把所有的组件组合到一起后，会解决这个问题的。
 
@@ -299,7 +317,16 @@ func animIn() {
 
 效果如下：
 
-![](https://zippy.gfycat.com/IdenticalLazyElectriceel.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/IdenticalLazyElectriceel.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 6. 清理代码
 

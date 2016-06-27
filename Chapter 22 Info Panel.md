@@ -126,7 +126,7 @@ func createLink() {
 1. 链接到 C4 主页
 2. 关闭面板
 
-### 5.1 关联手势
+### 5.1. 关联手势
 
 我们希望文本可以被点击，所以我们需要添加 `longPress` 手势，这样我们就能够捕捉到用户长按的手势。
 
@@ -200,7 +200,7 @@ func linkGesture() {
 
 现在，在 `setup()` 中调用 `linkGesture()`，然后我们就能开始最后一节了。
 
-### 5.2 隐藏手势
+### 5.2. 隐藏手势
 
 我们希望当我们点击链接之外的任何地方都能关闭面板。为了实现这个效果，我们创建一个动画和一个手势：
 
@@ -224,9 +224,18 @@ func hide() {
 
 运行并测试一下两个手势：
 
-![](https://zippy.gfycat.com/EasygoingAggressiveBergerpicard.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/EasygoingAggressiveBergerpicard.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
-### 5.3 显示
+### 5.3. 显示
 
 我们还需要一个方法来显示面板，下一章会用到。
 

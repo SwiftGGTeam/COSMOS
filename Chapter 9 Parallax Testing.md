@@ -76,7 +76,7 @@ class ParallaxBackground : CanvasController {
 
 因为我们已经创建了 `InfiniteScrollView` 类，所以我们可以直接开始了。添加所有图层最简单的方法是一个个创建和添加，但是这样效率太低了，而且我们都已经知道各图层滚动速度是不同的。
 
-![](http://www.c4ios.com/cosmos/8.1-testing-layers/6.0.01.png)
+![](http://www.c4ios.com/images/cosmos/9/01.png)
 
 上面的这张图片展示了滚动视图是如何跟随速度改变而显示的。与最上层移动整个宽度相比，速度为 `0.08` 的第一层只需要移动最上层宽度的 8% 作为 `contentSize` 即可。这就意味着我们不需要为所有的图层都创建全尺寸的内容大小。
 
@@ -165,7 +165,7 @@ repeat {
 
 运行你的应用是这样的：
 
-![](http://www.c4ios.com/cosmos/8.1-testing-layers/6.0.02.png)
+![](http://www.c4ios.com/images/cosmos/9/02.png)
 
 看到所有的数字都叠在一起了吗？这是因为每层的 `contentSize` 都是相同的。是时候将 `speed` 变量派上用场了。
 
@@ -216,7 +216,7 @@ class ParallaxBackground : CanvasController {
 
 你的应用应该是这样的：
 
-![](http://www.c4ios.com/cosmos/8.1-testing-layers/6.0.03.png)
+![](http://www.c4ios.com/images/cosmos/9/03.png)
 
 看起来不爽吧，让我们把它们根据 contentSize 和层数分开来吧：
 
@@ -234,13 +234,22 @@ repeat {
 
 现在看起来好多了：
 
-![](http://www.c4ios.com/cosmos/8.1-testing-layers/6.0.04.png)
+![](http://www.c4ios.com/images/cosmos/9/04.png)
 
 > 看到 1 很奇怪的靠在左边了吗？这是因为这一层的速度是 0.0...这一层不会移动，所以它的 contentSize 就是 0。
 
 当你滚动的时候：
 
-![](https://zippy.gfycat.com/UnnaturalObedientKillifish.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/UnnaturalObedientKillifish.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 4. 连接起来吧
 
@@ -256,7 +265,7 @@ var scrollviewOffsetContext = 0
 
 从敲出 `observeValueForKeyPath` 开始，当你敲了 `b` 时，Xcode 会提示 如下：
 
-![](http://www.c4ios.com/cosmos/8.1-testing-layers/6.0.07.png)
+![](http://www.c4ios.com/images/cosmos/9/05.png)
 
 敲 `return` 回车就可以了。
 
@@ -308,7 +317,16 @@ class ParallaxBackground : CanvasController {
 
 运行之。随着滚动，Xcode 控制台会跳出一些数字。
 
-![](https://zippy.gfycat.com/QualifiedSpitefulBluebird.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/QualifiedSpitefulBluebird.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 现在，将观察的方法与其他的图层连接起来。
 
@@ -336,13 +354,22 @@ for i in 0..<scrollviews.count-1 {
 
 现在是这样子的：
 
-![](https://zippy.gfycat.com/UltimateWellmadeAnkole.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/UltimateWellmadeAnkole.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 这里逻辑上有个错误。我们一开始说：如果速度是主图层的 80%，就只需要画布（canvas）是宽度的 80% 就够了。这是对的。
 
 但是，当主图层滚动到画布边缘时。视图会停止滚动，因为只有内容在框架内时才能滚动。
 
-![需要为每个画布增加 20% 的长度](http://www.c4ios.com/cosmos/8.1-testing-layers/6.0.10.png)
+![需要为每个画布增加 20% 的长度](http://www.c4ios.com/images/cosmos/9/06.png)
 
 按理说，80% 主画布大小的画布只能滚动到 `80% - visibleFrameWidth`。因此，我们需要将框架的宽度添加到速度低于 1.0 的画布上。
 
@@ -374,7 +401,16 @@ view.frame.width : 0
 
 现在，都照我们预想那样了：
 
-![](https://zippy.gfycat.com/EasyFemaleHarvestmen.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/EasyFemaleHarvestmen.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 [ParallaxBackground.swift](https://gist.github.com/C4Framework/f670e2fb15450514b776) 可以从这里下载。
 

@@ -162,7 +162,16 @@ infiniteScrollView.contentSize = CGSizeMake(CGFloat(width), 0)
 
 如果你滚动到最末端，你会注意到最后一个数字有点奇怪...这是因为内容的大小只是一个估计值。
 
-![](https://zippy.gfycat.com/LiveRepulsiveCarp.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/LiveRepulsiveCarp.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 为了修复这个问题，你可以从下方两个解决方法中选一个：
 
@@ -181,7 +190,16 @@ infiniteScrollView.contentSize = CGSizeMake(CGFloat(width), 0)
  
 从循环体中得到最后一个变量时，你计算出中心点，然后 x 方位增加一个间隙，这样你就能看到最后 20 这个数字了。
 
-![](https://zippy.gfycat.com/RawBouncyKouprey.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/RawBouncyKouprey.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 接下来，你要开始跟踪 `contentOffset` 的值。
 
@@ -211,7 +229,16 @@ override func layoutSubviews() {
 
 或者，点击 Xcode 右上角的图片，就像下图一样：
 
-![](https://zippy.gfycat.com/BarrenHastyIrukandjijellyfish.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/BarrenHastyIrukandjijellyfish.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 现在能跟踪到 scrollview 的 `contentOffset` 的 `x` 坐标了。
 
@@ -255,7 +282,16 @@ public override func layoutSubviews() {
 
 还有一件事情需要注意，当 view 重叠时（例如从开头走到了结束，或者反之），里面的内容会发生奇怪的移动...
 
-![](https://zippy.gfycat.com/CandidAntiqueBronco.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/CandidAntiqueBronco.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 解决方法就是将开头的内容连接到结束的位置，这样滚动起来就会流畅许多。
 
@@ -339,7 +375,16 @@ func addVisualIndicators() {
 
 现在，运行之后一切都会流畅啦。
 
-![](https://zippy.gfycat.com/SelfreliantCoolHake.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/SelfreliantCoolHake.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 当数字滑动到结束时，就会无缝连接继续循环。
 

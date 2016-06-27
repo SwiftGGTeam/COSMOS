@@ -194,7 +194,16 @@ class WorkSpace: CanvasController {
 
 运行，效果如下：
 
-![](https://zippy.gfycat.com/WetJoyfulHarborseal.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/WetJoyfulHarborseal.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 6. 连接菜单和信息面板
 
@@ -233,7 +242,16 @@ menu.infoAction = info.show
 
 运行，效果如下：
 
-![](https://zippy.gfycat.com/EthicalIdealDevilfish.mp4)
+{% raw %}
+  <video id="my-video" class="video-js" controls preload="auto" width="1000" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="https://zippy.gfycat.com/EthicalIdealDevilfish.mp4" type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+{% endraw %}
 
 ## 7. 环境音效
 

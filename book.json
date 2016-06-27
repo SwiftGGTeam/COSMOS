@@ -1,10 +1,17 @@
 {
 	"title": "C4iOS - COSMOS",
 	"language": "zh-hans",
-    "plugins": ["splitter", "ga"],
+    "plugins": ["splitter", "ga", "image-captions", "github-buttons", "local-video"],
     "pluginsConfig": {
         "ga": {
             "token": "UA-79904951-1"
-        }
+        },
+        "github-buttons": {
+	      "repo": "SwiftGGTeam/COSMOS",
+	      "types": [
+	        "star",
+	        "watch"
+	      ]
+	    }
     }
 }
