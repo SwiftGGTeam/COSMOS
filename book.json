@@ -1,0 +1,10 @@
+{
+	"title": "C4iOS - COSMOS",
+	"language": "zh-hans",
+    "plugins": ["splitter", "ga"],
+    "pluginsConfig": {
+        "ga": {
+            "token": "UA-79904951-1"
+        }
+    }
+}
