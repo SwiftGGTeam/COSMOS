@@ -2,6 +2,9 @@
 	"title": "C4iOS - COSMOS",
 	"language": "zh-hans",
     "plugins": ["splitter", "ga", "image-captions", "github-buttons", "local-video"],
+    "styles" : {
+    	"website": "assets/css/video.css"
+    },
     "pluginsConfig": {
         "ga": {
             "token": "UA-79904951-1"
